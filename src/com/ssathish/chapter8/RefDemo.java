@@ -41,6 +41,11 @@ class XBoxWeight extends XBox {
 	XBoxWeight(double len) {
 		super.length = super.breadth = super.height = len;
 	}
+
+	double volume() {
+		System.out.println("calling xboxweight's volume");
+		return 0.0;
+	}
 }
 public class RefDemo {
 
