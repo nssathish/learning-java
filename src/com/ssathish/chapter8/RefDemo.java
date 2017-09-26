@@ -1,7 +1,7 @@
 package com.ssathish.chapter8;
 
 class XBox {
-	double length,breadth,height;
+	private double length,breadth,height;
 	
 	XBox() {
 		length = -1;
@@ -12,6 +12,9 @@ class XBox {
 		length = l;
 		breadth = b;
 		height = h;
+	}
+	XBox(double len) {
+		length = breadth = height = len;
 	}
 	
 	double volume() {
@@ -39,7 +42,8 @@ class XBoxWeight extends XBox {
 	}
 	
 	XBoxWeight(double len) {
-		super.length = super.breadth = super.height = len;
+		//super.length = super.breadth = super.height = len;
+		super(len);
 	}
 
 	double volume() {
