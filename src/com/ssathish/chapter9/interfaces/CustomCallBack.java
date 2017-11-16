@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.CustomizedCallback;
+package src.com.ssathish.chapter9.interfaces;
 
 public interface CustomCallBack {
     int docCount = 0;

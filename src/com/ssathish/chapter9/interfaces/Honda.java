@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.CarSpecExample;
+package src.com.ssathish.chapter9.interfaces;
 
 public class Honda implements CarSpec {
     @Override
