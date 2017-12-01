@@ -1,5 +1,5 @@
-package src.com.ssathish.chapter9.interfaces.StackDataStructure;
-import src.com.ssathish.chapter9.interfaces.StackDataStructure.StackOp;
+package com.ssathish.chapter9.interfaces.StackDataStructure;
+import com.ssathish.chapter9.interfaces.StackDataStructure.StackOp;
 
 class StackImp implements StackOp {
 

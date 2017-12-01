@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.StackDataStructure;
+package com.ssathish.chapter9.interfaces.StackDataStructure;
 
 public class DynStackImp implements StackOp {
     private String stack[];

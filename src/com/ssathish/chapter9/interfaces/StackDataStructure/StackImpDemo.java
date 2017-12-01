@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.StackDataStructure;
+package com.ssathish.chapter9.interfaces.StackDataStructure;
 public class StackImpDemo {
     public static void main(String[] args) {
         StackImp si = new StackImp(10);

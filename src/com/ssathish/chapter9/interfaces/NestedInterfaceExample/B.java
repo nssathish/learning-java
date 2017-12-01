@@ -1,5 +1,5 @@
-package src.com.ssathish.chapter9.interfaces.NestedInterfaceExample;
-import src.com.ssathish.chapter9.interfaces.NestedInterfaceExample.A;
+package com.ssathish.chapter9.interfaces.NestedInterfaceExample;
+import com.ssathish.chapter9.interfaces.NestedInterfaceExample.A;
 
 public class B implements A.build {
     @Override

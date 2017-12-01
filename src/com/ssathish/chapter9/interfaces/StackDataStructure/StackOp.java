@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.StackDataStructure;
+package com.ssathish.chapter9.interfaces.StackDataStructure;
 
 public interface StackOp {
     String pop();
