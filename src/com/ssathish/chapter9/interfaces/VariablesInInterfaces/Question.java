@@ -6,7 +6,7 @@ public class Question implements SharedConstants {
     Random rand = new Random();
 
     int ask() {
-        int prob = (int) (100 * rand.nextDouble());
+        int prob = rand.nextInt();
         if (prob < 30) {
             return NO;
         }
