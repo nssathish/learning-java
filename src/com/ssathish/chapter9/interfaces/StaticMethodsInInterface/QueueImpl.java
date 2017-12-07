@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.StaticMethodsInInterface;
+package com.ssathish.chapter9.interfaces.StaticMethodsInInterface;
 
 public class QueueImpl implements QueueSkel {
     int tableCount;
