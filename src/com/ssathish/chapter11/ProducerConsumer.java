@@ -11,8 +11,8 @@ class ProducerConsumerThread implements Runnable {
     @Override
     public void run() {
         try {
-            for(int i = 30; i > 0; i--) {
-                System.out.println("Production left: " + i + "kg");
+            for(int i = 1; i <= 30; i++) {
+                System.out.println("Producing: " + i + "kg");
                 Thread.sleep(300);
             }
         } catch (InterruptedException ie) {
