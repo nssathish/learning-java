@@ -1,7 +1,5 @@
 package com.ssathish.chapter11;
 
-import jdk.nashorn.internal.codegen.CompilerConstants;
-
 class CallMe {
     //void call(String msg) {
     synchronized void call(String msg) {
@@ -40,8 +38,8 @@ public class ThreadSync {
         NewThread world = new NewThread(cm,"World");
         try {
             hello.t.join();
-            world.t.join();
             synch.t.join();
+            world.t.join();
         } catch (InterruptedException ie) {
             System.out.println("Thread exec interrupted");
         }

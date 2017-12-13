@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.VariablesInInterfaces;
+package com.ssathish.chapter9.interfaces.VariablesInInterfaces;
 
 public class AskMe implements SharedConstants {
     static void answer(int result) {

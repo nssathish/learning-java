@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.ExtensibleInterfaces;
+package com.ssathish.chapter9.interfaces.ExtensibleInterfaces;
 
 public class WBookPro implements Laptop {
     @Override

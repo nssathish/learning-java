@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.DefaultMethodInterface;
+package com.ssathish.chapter9.interfaces.DefaultMethodInterface;
 
 public interface StackSkel {
     void push(String name);

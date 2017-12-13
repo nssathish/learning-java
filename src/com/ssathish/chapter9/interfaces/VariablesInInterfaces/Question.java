@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.VariablesInInterfaces;
+package com.ssathish.chapter9.interfaces.VariablesInInterfaces;
 
 import java.util.Random;
 

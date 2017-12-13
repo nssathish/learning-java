@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.DefaultMethodInterface;
+package com.ssathish.chapter9.interfaces.DefaultMethodInterface;
 
 public class StackImpl implements StackSkel {
     int athleteCount;

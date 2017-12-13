@@ -1,4 +1,4 @@
-package src.com.ssathish.chapter9.interfaces.VariablesInInterfaces;
+package com.ssathish.chapter9.interfaces.VariablesInInterfaces;
 
 public interface SharedConstants {
     int NO = 0;
