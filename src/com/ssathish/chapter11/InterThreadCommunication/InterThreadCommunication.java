@@ -2,47 +2,73 @@ package com.ssathish.chapter11.InterThreadCommunication;
 
 class Q {
     int n;
-    boolean isProduced = false;
+    boolean isConsumed = false;
     synchronized int get() {
+        while (!isConsumed)
+            try {
+                wait();
+            } catch (InterruptedException ie) {
+                System.out.println("Interrupted get process");
+            }
+
+        this.isConsumed = false;
         System.out.println("Got: " + n);
-        this.isProduced = false;
+        notify();
         return n;
     }
+
     synchronized void put(int item) {
-        System.out.println("Put: " + n);
+        while(isConsumed)
+            try {
+                wait();
+            } catch (InterruptedException ie) {
+                System.out.println("Interrupted put process");
+            }
+
         this.n = item;
-        this.isProduced = true;
+        this.isConsumed = true;
+        System.out.println("Put: " + n);
+        notify();
     }
 }
 
 class Producer implements Runnable {
+    Q q ;
 
-    int item = 0;
-    Q q = new Q();
-    public Producer() {
+    public Producer(Q q) {
+        this.q = q;
         new Thread(this, "Producer").start();
     }
+
     @Override
     public void run() {
-        while (true)
-            q.put(item++);
+        int item = 0;
+        while (true) {
+            q.put(item);
+            item++;
+        }
     }
 }
 
 class Consumer implements Runnable {
-    Q q = new Q();
-    public Consumer () {
+    Q q;
+
+    public Consumer (Q q) {
+        this.q = q;
         new Thread(this,"Consumer").start();
     }
+
     @Override
     public void run() {
-        while (true)
+        while (true) {
             q.get();
+        }
     }
 }
 public class InterThreadCommunication {
     public static void main(String[] args) {
-        new Producer();
-        new Consumer();
+        Q q = new Q();
+        new Producer(q);
+        new Consumer(q);
     }
 }
